@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TPDataSet3" targetNamespace="http://tempuri.org/TPDataSet3.xsd" xmlns:mstns="http://tempuri.org/TPDataSet3.xsd" xmlns="http://tempuri.org/TPDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TPConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TPConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TP_BD2.Properties.Settings.GlobalReference.Default.TPConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_procurementTableAdapter" GeneratorDataComponentClassName="view_procurementTableAdapter" Name="view_procurement" UserDataComponentName="view_procurementTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TPConnectionString (Settings)" DbObjectName="TP.dbo.view_procurement" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер заказа], [Дата заказа], Услуги, [Номер детали], [Количество деталей] FROM dbo.view_procurement</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер заказа" DataSetColumn="Номер заказа" />
+              <Mapping SourceColumn="Дата заказа" DataSetColumn="Дата заказа" />
+              <Mapping SourceColumn="Услуги" DataSetColumn="Услуги" />
+              <Mapping SourceColumn="Номер детали" DataSetColumn="Номер детали" />
+              <Mapping SourceColumn="Количество деталей" DataSetColumn="Количество деталей" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TPDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TPDataSet3" msprop:Generator_UserDSName="TPDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_procurement" msprop:Generator_TableClassName="view_procurementDataTable" msprop:Generator_TableVarName="tableview_procurement" msprop:Generator_TablePropName="view_procurement" msprop:Generator_RowDeletingName="view_procurementRowDeleting" msprop:Generator_RowChangingName="view_procurementRowChanging" msprop:Generator_RowEvHandlerName="view_procurementRowChangeEventHandler" msprop:Generator_RowDeletedName="view_procurementRowDeleted" msprop:Generator_UserTableName="view_procurement" msprop:Generator_RowChangedName="view_procurementRowChanged" msprop:Generator_RowEvArgName="view_procurementRowChangeEvent" msprop:Generator_RowClassName="view_procurementRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_заказа" msprop:Generator_ColumnVarNameInTable="columnНомер_заказа" msprop:Generator_ColumnPropNameInRow="Номер_заказа" msprop:Generator_ColumnPropNameInTable="Номер_заказаColumn" msprop:Generator_UserColumnName="Номер заказа" type="xs:int" />
+              <xs:element name="Дата_x0020_заказа" msprop:Generator_ColumnVarNameInTable="columnДата_заказа" msprop:Generator_ColumnPropNameInRow="Дата_заказа" msprop:Generator_ColumnPropNameInTable="Дата_заказаColumn" msprop:Generator_UserColumnName="Дата заказа" type="xs:dateTime" />
+              <xs:element name="Услуги" msprop:Generator_ColumnVarNameInTable="columnУслуги" msprop:Generator_ColumnPropNameInRow="Услуги" msprop:Generator_ColumnPropNameInTable="УслугиColumn" msprop:Generator_UserColumnName="Услуги">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_x0020_детали" msprop:Generator_ColumnVarNameInTable="columnНомер_детали" msprop:Generator_ColumnPropNameInRow="Номер_детали" msprop:Generator_ColumnPropNameInTable="Номер_деталиColumn" msprop:Generator_UserColumnName="Номер детали" type="xs:int" />
+              <xs:element name="Количество_x0020_деталей" msprop:Generator_ColumnVarNameInTable="columnКоличество_деталей" msprop:Generator_ColumnPropNameInRow="Количество_деталей" msprop:Generator_ColumnPropNameInTable="Количество_деталейColumn" msprop:Generator_UserColumnName="Количество деталей" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

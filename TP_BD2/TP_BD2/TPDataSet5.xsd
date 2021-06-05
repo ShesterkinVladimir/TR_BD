@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TPDataSet5" targetNamespace="http://tempuri.org/TPDataSet5.xsd" xmlns:mstns="http://tempuri.org/TPDataSet5.xsd" xmlns="http://tempuri.org/TPDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TPConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TPConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TP_BD2.Properties.Settings.GlobalReference.Default.TPConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_accountantTableAdapter" GeneratorDataComponentClassName="view_accountantTableAdapter" Name="view_accountant" UserDataComponentName="view_accountantTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TPConnectionString (Settings)" DbObjectName="TP.dbo.view_accountant" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер заказа], [Номер сотрудника], [Имя сотрудника], Должность, Зарплата, [Дата выполнения], [Цена заказа], Услуги, [Цена услуги], [Номер детали], [Цена детали] FROM dbo.view_accountant</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер заказа" DataSetColumn="Номер заказа" />
+              <Mapping SourceColumn="Номер сотрудника" DataSetColumn="Номер сотрудника" />
+              <Mapping SourceColumn="Имя сотрудника" DataSetColumn="Имя сотрудника" />
+              <Mapping SourceColumn="Должность" DataSetColumn="Должность" />
+              <Mapping SourceColumn="Зарплата" DataSetColumn="Зарплата" />
+              <Mapping SourceColumn="Дата выполнения" DataSetColumn="Дата выполнения" />
+              <Mapping SourceColumn="Цена заказа" DataSetColumn="Цена заказа" />
+              <Mapping SourceColumn="Услуги" DataSetColumn="Услуги" />
+              <Mapping SourceColumn="Цена услуги" DataSetColumn="Цена услуги" />
+              <Mapping SourceColumn="Номер детали" DataSetColumn="Номер детали" />
+              <Mapping SourceColumn="Цена детали" DataSetColumn="Цена детали" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TPDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TPDataSet5" msprop:Generator_UserDSName="TPDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_accountant" msprop:Generator_TableClassName="view_accountantDataTable" msprop:Generator_TableVarName="tableview_accountant" msprop:Generator_TablePropName="view_accountant" msprop:Generator_RowDeletingName="view_accountantRowDeleting" msprop:Generator_RowChangingName="view_accountantRowChanging" msprop:Generator_RowEvHandlerName="view_accountantRowChangeEventHandler" msprop:Generator_RowDeletedName="view_accountantRowDeleted" msprop:Generator_UserTableName="view_accountant" msprop:Generator_RowChangedName="view_accountantRowChanged" msprop:Generator_RowEvArgName="view_accountantRowChangeEvent" msprop:Generator_RowClassName="view_accountantRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_заказа" msprop:Generator_ColumnVarNameInTable="columnНомер_заказа" msprop:Generator_ColumnPropNameInRow="Номер_заказа" msprop:Generator_ColumnPropNameInTable="Номер_заказаColumn" msprop:Generator_UserColumnName="Номер заказа" type="xs:int" />
+              <xs:element name="Номер_x0020_сотрудника" msprop:Generator_ColumnVarNameInTable="columnНомер_сотрудника" msprop:Generator_ColumnPropNameInRow="Номер_сотрудника" msprop:Generator_ColumnPropNameInTable="Номер_сотрудникаColumn" msprop:Generator_UserColumnName="Номер сотрудника" type="xs:int" />
+              <xs:element name="Имя_x0020_сотрудника" msprop:Generator_ColumnVarNameInTable="columnИмя_сотрудника" msprop:Generator_ColumnPropNameInRow="Имя_сотрудника" msprop:Generator_ColumnPropNameInTable="Имя_сотрудникаColumn" msprop:Generator_UserColumnName="Имя сотрудника">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Должность" msprop:Generator_ColumnVarNameInTable="columnДолжность" msprop:Generator_ColumnPropNameInRow="Должность" msprop:Generator_ColumnPropNameInTable="ДолжностьColumn" msprop:Generator_UserColumnName="Должность">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Зарплата" msprop:Generator_ColumnVarNameInTable="columnЗарплата" msprop:Generator_ColumnPropNameInRow="Зарплата" msprop:Generator_ColumnPropNameInTable="ЗарплатаColumn" msprop:Generator_UserColumnName="Зарплата" type="xs:int" />
+              <xs:element name="Дата_x0020_выполнения" msprop:Generator_ColumnVarNameInTable="columnДата_выполнения" msprop:Generator_ColumnPropNameInRow="Дата_выполнения" msprop:Generator_ColumnPropNameInTable="Дата_выполненияColumn" msprop:Generator_UserColumnName="Дата выполнения" type="xs:dateTime" />
+              <xs:element name="Цена_x0020_заказа" msprop:Generator_ColumnVarNameInTable="columnЦена_заказа" msprop:Generator_ColumnPropNameInRow="Цена_заказа" msprop:Generator_ColumnPropNameInTable="Цена_заказаColumn" msprop:Generator_UserColumnName="Цена заказа" type="xs:int" />
+              <xs:element name="Услуги" msprop:Generator_ColumnVarNameInTable="columnУслуги" msprop:Generator_ColumnPropNameInRow="Услуги" msprop:Generator_ColumnPropNameInTable="УслугиColumn" msprop:Generator_UserColumnName="Услуги">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Цена_x0020_услуги" msprop:Generator_ColumnVarNameInTable="columnЦена_услуги" msprop:Generator_ColumnPropNameInRow="Цена_услуги" msprop:Generator_ColumnPropNameInTable="Цена_услугиColumn" msprop:Generator_UserColumnName="Цена услуги" type="xs:decimal" />
+              <xs:element name="Номер_x0020_детали" msprop:Generator_ColumnVarNameInTable="columnНомер_детали" msprop:Generator_ColumnPropNameInRow="Номер_детали" msprop:Generator_ColumnPropNameInTable="Номер_деталиColumn" msprop:Generator_UserColumnName="Номер детали" type="xs:int" />
+              <xs:element name="Цена_x0020_детали" msprop:Generator_ColumnVarNameInTable="columnЦена_детали" msprop:Generator_ColumnPropNameInRow="Цена_детали" msprop:Generator_ColumnPropNameInTable="Цена_деталиColumn" msprop:Generator_UserColumnName="Цена детали" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

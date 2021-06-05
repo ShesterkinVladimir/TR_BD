@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B060506F-B6C4-4F34-BA16-96C0D232C0B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TP_BD2</RootNamespace>
+    <AssemblyName>TP_BD2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_accountant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_accountant.Designer.cs">
+      <DependentUpon>Form_accountant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin.Designer.cs">
+      <DependentUpon>Form_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_procurement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_procurement.Designer.cs">
+      <DependentUpon>Form_procurement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_repairer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_repairer.Designer.cs">
+      <DependentUpon>Form_repairer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TPDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_accountant.resx">
+      <DependentUpon>Form_accountant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin.resx">
+      <DependentUpon>Form_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_procurement.resx">
+      <DependentUpon>Form_procurement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_repairer.resx">
+      <DependentUpon>Form_repairer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TPDataSet.xsc">
+      <DependentUpon>TPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet.xss">
+      <DependentUpon>TPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet1.xsc">
+      <DependentUpon>TPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet1.xss">
+      <DependentUpon>TPDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet10.xsc">
+      <DependentUpon>TPDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet10.xss">
+      <DependentUpon>TPDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet11.xsc">
+      <DependentUpon>TPDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet11.xss">
+      <DependentUpon>TPDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet12.xsc">
+      <DependentUpon>TPDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet12.xss">
+      <DependentUpon>TPDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet13.xsc">
+      <DependentUpon>TPDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet13.xss">
+      <DependentUpon>TPDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet14.xsc">
+      <DependentUpon>TPDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet14.xss">
+      <DependentUpon>TPDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet2.xsc">
+      <DependentUpon>TPDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet2.xss">
+      <DependentUpon>TPDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet3.xsc">
+      <DependentUpon>TPDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet3.xss">
+      <DependentUpon>TPDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet4.xsc">
+      <DependentUpon>TPDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet4.xss">
+      <DependentUpon>TPDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet5.xsc">
+      <DependentUpon>TPDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet5.xss">
+      <DependentUpon>TPDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet6.xsc">
+      <DependentUpon>TPDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet6.xss">
+      <DependentUpon>TPDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet7.xsc">
+      <DependentUpon>TPDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet7.xss">
+      <DependentUpon>TPDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet8.xsc">
+      <DependentUpon>TPDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet8.xss">
+      <DependentUpon>TPDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet9.xsc">
+      <DependentUpon>TPDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="TPDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPDataSet9.xss">
+      <DependentUpon>TPDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

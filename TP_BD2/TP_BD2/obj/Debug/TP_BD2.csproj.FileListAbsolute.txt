@@ -1,0 +1,13 @@
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\bin\Debug\TP_BD2.exe.config
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\bin\Debug\TP_BD2.exe
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\bin\Debug\TP_BD2.pdb
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.csprojAssemblyReference.cache
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.Form1.resources
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.Form_repairer.resources
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.Properties.Resources.resources
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.csproj.GenerateResource.cache
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.exe
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.pdb
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.Form_accountant.resources
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.Form_procurement.resources
+C:\Users\vladimir\source\repos\TP_BD2\TP_BD2\obj\Debug\TP_BD2.Form_admin.resources
